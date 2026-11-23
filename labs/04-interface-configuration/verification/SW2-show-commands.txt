@@ -1,0 +1,84 @@
+SW2#show ip interface brief
+Interface              IP-Address      OK? Method Status                Protocol 
+FastEthernet0/1        unassigned      YES manual up                    up 
+FastEthernet0/2        unassigned      YES manual up                    up 
+FastEthernet0/3        unassigned      YES manual administratively down down 
+FastEthernet0/4        unassigned      YES manual administratively down down 
+FastEthernet0/5        unassigned      YES manual administratively down down 
+FastEthernet0/6        unassigned      YES manual administratively down down 
+FastEthernet0/7        unassigned      YES manual administratively down down 
+FastEthernet0/8        unassigned      YES manual administratively down down 
+FastEthernet0/9        unassigned      YES manual administratively down down 
+FastEthernet0/10       unassigned      YES manual administratively down down 
+FastEthernet0/11       unassigned      YES manual administratively down down 
+FastEthernet0/12       unassigned      YES manual administratively down down 
+FastEthernet0/13       unassigned      YES manual administratively down down 
+FastEthernet0/14       unassigned      YES manual administratively down down 
+FastEthernet0/15       unassigned      YES manual administratively down down 
+FastEthernet0/16       unassigned      YES manual administratively down down 
+FastEthernet0/17       unassigned      YES manual administratively down down 
+FastEthernet0/18       unassigned      YES manual administratively down down 
+FastEthernet0/19       unassigned      YES manual administratively down down 
+FastEthernet0/20       unassigned      YES manual administratively down down 
+FastEthernet0/21       unassigned      YES manual administratively down down 
+
+
+	
+SW2#show interfaces status
+Port      Name               Status       Vlan       Duplex  Speed Type
+Fa0/1     # to end hosts #   connected    1          full    100   10/100BaseTX
+Fa0/2     # to end hosts #   connected    1          full    100   10/100BaseTX
+Fa0/3     # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/4     # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/5     # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/6     # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/7     # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/8     # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/9     # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/10    # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/11    # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/12    # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/13    # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/14    # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/15    # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/16    # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/17    # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/18    # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/19    # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/20    # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/21    # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/22    # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/23    # not used #       disabled 1          auto    auto  10/100BaseTX
+Fa0/24    # not used #       disabled 1          auto    auto  10/100BaseTX
+Gig0/1    # to SW1 #         connected    1          full    100   10/100/1000BaseTX
+Gig0/2    # not used #       disabled 1          auto    auto  10/100/1000BaseTX
+
+
+SW2#show interfaces g0/1
+GigabitEthernet0/1 is up, line protocol is up (connected)
+  Hardware is Lance, address is 00d0.ba43.3b19 (bia 00d0.ba43.3b19)
+  Description: # to SW1 #
+ BW 1000000 Kbit, DLY 100 usec,
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  Full-duplex, 100Mb/s
+  input flow-control is off, output flow-control is off
+  ARP type: ARPA, ARP Timeout 00:04:00
+  Last input 00:00:08, output 00:00:05, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue :0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     956 packets input, 193351 bytes, 0 no buffer
+     Received 956 broadcasts, 0 runts, 0 giants, 0 throttles
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 watchdog, 0 multicast, 0 pause input
+     0 input packets with dribble condition detected
+     2357 packets output, 263570 bytes, 0 underruns
+     0 output errors, 0 collisions, 10 interface resets
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffer failures, 0 output buffers swapped out
